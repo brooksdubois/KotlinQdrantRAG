@@ -1,0 +1,29 @@
+### GET request to example server
+
+GET http://localhost:6333/collections/products
+
+###
+# curl -X POST http://localhost:6333/collections/products/points/scroll
+#  -H "Content-Type: application/json"
+#  -d '{"limit": 5}'
+POST http://localhost:6333/collections/products/points/scroll
+Content-Type: application/json
+
+{
+  "limit": 5
+}
+
+###
+# Clear the vector store
+POST http://localhost:6333/collections/products/points/delete
+Content-Type: application/json
+
+{
+  "filter": {}
+}
+
+###
+
+
+
+###
